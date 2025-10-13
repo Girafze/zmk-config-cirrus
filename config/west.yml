@@ -6,14 +6,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: cirrus-shield-module
+    - name: cirrus-module
       url-base: https://github.com/Girafze/cirrus-shield-module
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: cirrus_shield
-      remote: cirrus-shield-module
+    - name: cirrus-shield-module
+      remote: cirrus-module
       revision: main
   self:
     path: config
